@@ -22,6 +22,7 @@ Mandatory Object holding the [`RTCConfiguration`](http://w3c.github.io/webrtc-pc
 There are also custom options not present in the WebRTC specification:
 
 * `gatheringTimeout` {Number}: ICE gathering is terminated after the given time (milliseconds) and a faked `onicecandidate` event with `candidate = null` is fired. No more `onicecandidate` events are fired once this timeout.
+* `gatheringTimeoutAfterHost` {Number}: Once the first "host" candidate is gathered, ICE gathering is terminated after the given time (milliseconds) and a faked `onicecandidate` event with `candidate = null` is fired. No more `onicecandidate` events are fired once this timeout.
 * `gatheringTimeoutAfterRelay` {Number}: Once the first "relay" (TURN) candidate is gathered, ICE gathering is terminated after the given time (milliseconds) and a faked `onicecandidate` event with `candidate = null` is fired. No more `onicecandidate` events are fired once this timeout.
 
 
